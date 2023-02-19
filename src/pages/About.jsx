@@ -28,7 +28,7 @@ const About = () => {
                 <p className="section__description">
                 City transfer :Ivan take you and stay with you at all Orange County and Los Angeles city
                 </p> <br/> Fast and easy booking.
-                  <br/>Wohl city tour.
+                  <br/>Whole city tour.
                 <div className=" d-flex align-items-center gap-3 mt-4">
                   <span className="fs-4">
                     <i class="ri-phone-line"></i>

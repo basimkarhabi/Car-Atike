@@ -3,7 +3,7 @@ const serviceData = [
       id: 1,
       title: "City Transfer",
       icon: "ri-map-pin-2-line",
-      desc: "van take you and stay with you at all Orange County and Los Angeles city"
+      desc: "we take you and stay with you at all Orange County and Los Angeles city"
     },
   
     {

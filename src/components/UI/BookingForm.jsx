@@ -56,7 +56,7 @@ console.log(successMsg)
 
      
 
-      <FormGroup className="booking__form d-inline-block ms-4 mb-4 mt-1">
+      <FormGroup className="booking__form d-inline-block me-4 mb-4 mt-1">
             <input type="text" placeholder="LastName" id="lastName"
                   {...register("lastName", 
                       {required: "*LastName is required.",message:"Enter your Last Name error message"})}   
@@ -74,7 +74,7 @@ console.log(successMsg)
          {errors.email && <p className="errorMsg">{errors.email.message}</p>}
       </FormGroup>
   
-      <FormGroup className="booking__form d-inline-block ms-4 mb-4">
+      <FormGroup className="booking__form d-inline-block me-4 mb-4">
             <input type="number" placeholder="PhoneNumber" name="phoneNumber"
                   {...register("phoneNumber", {required: "* Phone Number is required.",
                       validate: {checkLength: (value)=>value.length >=12}
@@ -91,7 +91,7 @@ console.log(successMsg)
           {errors.fromAddress && (<p className="errorMsg">{errors.fromAddress.message}</p>)}      
         </FormGroup>
 
-        <FormGroup className="booking__form d-inline-block ms-4 mb-4">
+        <FormGroup className="booking__form d-inline-block me-4 mb-4">
           <input type="text" placeholder="To Address"id="toAddress" {...register("toAddress", {
                 required: "*To Address is required."
               })}/>
@@ -107,7 +107,7 @@ console.log(successMsg)
          {errors.journeyDate && (<p className="errorMsg">{errors.JourneyDate.message}</p>)}   
       </FormGroup>
 
-      <FormGroup className="booking__form d-inline-block ms-4 mb-4">
+      <FormGroup className="booking__form d-inline-block me-4 mb-4">
         <input type="time" placeholder="Journey Time" id ="timePicker"
           {...register("timePicker", { required: "*Please select at-least one Time Picker"},{valueAsDate: true})}
 
@@ -127,10 +127,10 @@ console.log(successMsg)
             </select>
         </FormGroup> 
 
-     <FormGroup className="booking__form" >
+     <FormGroup className="booking__form " >
         <label>Message</label>
             <textarea
-            className="textarea"
+            className="textarea mt-3"
               rows={5}
               type="textarea"
               placeholder="Write"

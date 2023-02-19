@@ -68,7 +68,7 @@ const Contact = () => {
                         {errors.firstName && (<p className="errorMsg">{errors.firstName.message}</p>)}
                     </FormGroup>
 
-                    <FormGroup className="booking__form d-inline-block me-4 mb-1">
+                    <FormGroup className="booking__form d-inline-block me-4 mb-4">
                         <input type="email" placeholder="Email" id="email"
                           {...register("email", 
                           {required: "Email is required.", pattern: {value: /^[^@ ]+@[^@ ]+\.[^@ .]{2,}$/,
@@ -76,7 +76,7 @@ const Contact = () => {
                            {errors.email && <p className="errorMsg">{errors.email.message}</p>}
                     </FormGroup>
 
-                    <FormGroup className="contact__form mb-2 m-2 ">
+                    <FormGroup className="contact__form mb-2 me-1 ">
                         <textarea
                             rows={5}
                             type="textarea"
@@ -112,7 +112,7 @@ const Contact = () => {
                       <h6 className="mb-0 fs-6">Email:</h6>
                       <p className="section__description mb-0">Majatik@yahoo.com</p>
                     </div>
-
+            {/*
                     <h6 className="fw-bold mt-4">Follow Us</h6>
 
                     <div className=" d-flex align-items-center gap-4 mt-3">
@@ -126,6 +126,8 @@ const Contact = () => {
                         </Link>
                       ))}
                     </div>
+
+                    */}
                   </div>
                 </Col>
               </Row>
